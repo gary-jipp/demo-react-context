@@ -1,56 +1,8 @@
-.App {
-  margin: 3 em;
-}
 
-h4 {
-  padding: 0px;
-  margin: 0.2em;
-}
-h4:empty:before {
-  content: "\200b"; /* unicode zero width space character */
-}
-
-button {
-  height: 2em;
-  font-size: 0.7em;
-  background-color: lightgreen;
-  margin-right: 0.4em;
-  margin-top: 0.4em;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li {
-  padding: 5px;
-  margin: 2px;
-  width: 26em;
-  background-color: #eee;
-}
-
-li a {
-  color: grey;
-}
-
-li:hover {
-  background-color: darkolivegreen;
-  color: white;
-}
-
-li:hover a {
-  color: white;
-}
-
-.UserEdit div {
-  /* margin: 1px; */
-  /* border: solid 1px; */
-  padding: 2px;
-}
 .UserInfo div {
   background-color: lightgrey;
-  /* margin: 1px; */
+   margin: 1px; 
   /* border: solid 1px; */
-  padding: 2px;
+  padding: 6px;
+  width: 15em;
 }

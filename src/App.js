@@ -10,8 +10,8 @@ export default function App() {
       <h2>Context Demo</h2>
       {/* Wrap children in this provider */}
       <UserProvider>
-        <Login />
-        <UserInfo />
+        {<Login />}
+        {<UserInfo />}
       </UserProvider>
     </div>
   );
