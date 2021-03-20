@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 
-const UserProvider = function (props) {
+export default function UserProvider(props) {
   const [user, setUser] = useState({ email: "", name: "" });
 
   const userData = { user, setUser };
@@ -13,5 +13,4 @@ const UserProvider = function (props) {
   );
 };
 
-export default UserProvider;
 export const userContext = createContext();

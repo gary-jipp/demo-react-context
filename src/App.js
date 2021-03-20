@@ -1,6 +1,6 @@
 import UserProvider from './UserProvider';
 import UserInfo from './UserInfo';
-import UserEdit from './UserEdit';
+import Login from './Login';
 import './App.css';
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
       <h2>Context Demo</h2>
       {/* Wrap children in this provider */}
       <UserProvider>
-        <UserEdit />
+        <Login />
         <UserInfo />
       </UserProvider>
     </div>
