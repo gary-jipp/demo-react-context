@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { userContext } from './UserProvider';
+import { authContext } from './AuthProvider';
 
 export default function UserInfo() {
-  const { auth, user, logout } = useContext(userContext);
+  const { user, logout } = useContext(authContext);
 
   const onLogout = function (event) {
     logout();
@@ -11,8 +11,9 @@ export default function UserInfo() {
   // Show user Info if logged in
   return (
     <div className="UserInfo">
-      <div>Name: {user.name}</div>
+      <div>You are logged in</div>
       <div>Email: {user.email}</div>
+      <div>Name: {user.name}</div>
       <input type="button" value="Logout" onClick={onLogout} />
     </div>
   );

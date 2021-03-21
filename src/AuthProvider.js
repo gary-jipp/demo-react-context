@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 
-export default function UserProvider(props) {
+export default function AuthProvider(props) {
   const [auth, setAuth] = useState(false);
   const [user, setUser] = useState({ email: "", name: "", });
 
@@ -18,10 +18,10 @@ export default function UserProvider(props) {
 
   // We can use this component to wrap any content we want to share this context
   return (
-    <userContext.Provider value={userData}>
+    <authContext.Provider value={userData}>
       {props.children}
-    </userContext.Provider>
+    </authContext.Provider>
   );
 };
 
-export const userContext = createContext();
+export const authContext = createContext();

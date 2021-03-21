@@ -1,18 +1,18 @@
-import UserProvider from './UserProvider';
+
+import { useContext } from 'react';
+import { authContext } from './AuthProvider';
 import UserInfo from './UserInfo';
-import Login from './Login';
+import UserLogin from './UserLogin';
 import './App.css';
 
 export default function App() {
 
+  const { auth } = useContext(authContext);
+
   return (
     <div className="App">
-      <h2>Context Demo</h2>
-      {/* Wrap children in this provider */}
-      <UserProvider>
-        {<Login />}
-        {<UserInfo />}
-      </UserProvider>
+      {!auth && <UserLogin />}
+      {auth && <UserInfo />}
     </div>
   );
 }

@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AuthProvider from './AuthProvider';
 import './index.css';
 import App from './App';
 
+// Wrap entire app in AuthProvider so available to all components
 ReactDOM.render(
-  <React.StrictMode>
+  <AuthProvider>
     <App />
-  </React.StrictMode>,
+  </AuthProvider>,
   document.getElementById('root')
 );
