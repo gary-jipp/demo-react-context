@@ -1,16 +1,20 @@
 import { createContext, useState } from 'react';
+import uuid from 'react-uuid';
 
 export default function AuthProvider(props) {
   const [auth, setAuth] = useState(false);
+  const [id, setId] = useState();
   const [user, setUser] = useState({ email: "", name: "", });
 
+  // Perform login process for the user & save authID, etc
   const login = function (email, password) {
-    setUser({ email, name: "Test User" });
+    setUser({ email, id, name: "Test User" });
     setAuth(true);
   };
 
   const logout = function (email, password) {
     setUser({ email: "", name: "" });
+    setId(uuid());
     setAuth(false);
   };
 

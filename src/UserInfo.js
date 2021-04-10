@@ -14,6 +14,7 @@ export default function UserInfo() {
       <div>You are logged in</div>
       <div>Email: {user.email}</div>
       <div>Name: {user.name}</div>
+      <div>UserId: {user.id}</div>
       <input type="button" value="Logout" onClick={onLogout} />
     </div>
   );
