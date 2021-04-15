@@ -17,9 +17,9 @@ export default function UserInfo() {
       <div>Email: {user.email}</div>
       <div>Name: {user.name}</div>
       <div>UserId: {user.id}</div>
-      
+
       {/* We could have used counter or state.counter here */}
-      <div>Counter: <span>{counter} </span>
+      <div>Counter: <span> {counter} </span>
         <button onClick={increment}>+1</button>
         <button onClick={clear}>Clear</button>
       </div>
