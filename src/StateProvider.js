@@ -3,8 +3,7 @@ import { createContext, useState } from 'react';
 export default function StateProvider(props) {
   const [state, setState] = useState({
     counter: 0
-  }
-  );
+  });
 
   // Function to change one of the state items
   const increment = function () {
