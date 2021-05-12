@@ -26,7 +26,7 @@ export default function UserLogin() {
       <form onSubmit={onSubmit}>
         <p>
           <input type="text" name="login"
-            value={email} placeholder="Username or Email Address"
+            value={email} placeholder="Username"
             onChange={onEmailChange} />
         </p>
         <p>
