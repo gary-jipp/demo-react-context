@@ -1,10 +1,12 @@
 import { useState, useContext, useEffect } from 'react';
 import { authContext } from './AuthProvider';
+import { stateContext } from './StateProvider';
 
 export default function UserLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login } = useContext(authContext);
+  const { counter, increment, clear } = useContext(stateContext);
 
   const onEmailChange = function (event) {
     setEmail(event.target.value);
@@ -44,6 +46,11 @@ export default function UserLogin() {
           <input type="submit" name="commit" value="Login" />
         </p>
       </form>
+
+      <div>Counter: <span> {counter} </span>
+        <button onClick={increment}>+1</button>
+        <button onClick={clear}>Clear</button>
+      </div>
     </div>
   );
 };
