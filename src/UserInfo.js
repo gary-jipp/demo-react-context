@@ -9,7 +9,7 @@ export default function UserInfo() {
     logout();
   };
 
-  // Show user Info if logged in
+  // Show user Info
   return (
     <div className="UserInfo">
       <div>You are logged in</div>
