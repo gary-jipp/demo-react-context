@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import { authContext } from './AuthProvider';
 import Counter from './Counter';
 
