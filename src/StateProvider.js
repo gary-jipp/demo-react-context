@@ -2,7 +2,7 @@ import { createContext, useState } from 'react';
 
 export default function StateProvider(props) {
 
-  // Here is our Shared  State
+  // Here is our Shared State Object
   const [state, setState] = useState({
     counter: 0
   });
