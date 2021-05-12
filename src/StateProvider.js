@@ -1,6 +1,8 @@
 import { createContext, useState } from 'react';
 
 export default function StateProvider(props) {
+
+  // Here is our Shared  State
   const [state, setState] = useState({
     counter: 0
   });
@@ -15,12 +17,12 @@ export default function StateProvider(props) {
   };
 
   // This list can get long with a lot of functions.  Reducer may be a better choice
-  const stateData = { state, counter: state.counter, increment, clear };
+  const providerData = { state, counter: state.counter, increment, clear };
 
   // We can now use this as a component to wrap anything 
   // that needs our state
   return (
-    <stateContext.Provider value={stateData}>
+    <stateContext.Provider value={providerData}>
       {props.children}
     </stateContext.Provider>
   );
