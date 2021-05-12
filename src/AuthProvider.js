@@ -3,7 +3,6 @@ import uuid from 'react-uuid';
 
 export default function AuthProvider(props) {
   const [auth, setAuth] = useState(false);
-  const [, setId] = useState();
   const [user, setUser] = useState({ email: "", name: "", });
 
   // Perform login process for the user & save authID, etc
@@ -15,7 +14,6 @@ export default function AuthProvider(props) {
 
   const logout = function (email, password) {
     setUser({ email: "", name: "" });
-    setId(uuid());
     setAuth(false);
   };
 
