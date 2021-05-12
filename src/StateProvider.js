@@ -4,7 +4,9 @@ export default function StateProvider(props) {
 
   // Here is our Shared State Object
   const [state, setState] = useState({
-    counter: 0
+    counter: 0,
+    item1: 'more stuff 1',
+    item2: 'more stuff 2',
   });
 
   // Function to change one of the state items
