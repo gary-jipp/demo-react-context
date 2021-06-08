@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { stateContext } from './StateProvider';
+import { stateContext } from 'StateProvider';
 
 export default function Counter() {
   const { counter, increment, clear } = useContext(stateContext);

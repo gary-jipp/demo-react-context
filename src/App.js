@@ -1,10 +1,10 @@
 
 import { useContext } from 'react';
-import { authContext } from './AuthProvider';
-import StateProvider from './StateProvider';
-import UserInfo from './UserInfo';
-import UserLogin from './UserLogin';
-import './App.css';
+import { authContext } from 'AuthProvider';
+import StateProvider from 'StateProvider';
+import UserInfo from 'pages/UserInfo';
+import UserLogin from 'pages/UserLogin';
+import 'App.css';
 
 export default function App() {
 
