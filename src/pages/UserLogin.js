@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { authContext } from 'AuthProvider';
+import { authContext } from 'providers/AuthProvider';
 import Counter from 'Counter';
 
 export default function UserLogin() {

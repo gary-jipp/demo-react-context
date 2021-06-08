@@ -1,7 +1,7 @@
 
 import { useContext } from 'react';
-import { authContext } from 'AuthProvider';
-import StateProvider from 'StateProvider';
+import { authContext } from 'providers/AuthProvider';
+import StateProvider from 'providers/StateProvider';
 import UserInfo from 'pages/UserInfo';
 import UserLogin from 'pages/UserLogin';
 import 'App.css';

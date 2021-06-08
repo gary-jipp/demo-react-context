@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AuthProvider from './AuthProvider';
-import './index.css';
-import App from './App';
+import AuthProvider from 'providers/AuthProvider';
+import 'index.css';
+import App from 'App';
 
 // check if user still logged in.
 
