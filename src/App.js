@@ -2,8 +2,8 @@
 import { useContext } from 'react';
 import { authContext } from 'providers/AuthProvider';
 import StateProvider from 'providers/StateProvider';
-import UserInfo from 'pages/UserInfo';
-import UserLogin from 'pages/UserLogin';
+import Info from 'pages/Info';
+import Login from 'pages/Login';
 import 'App.css';
 
 export default function App() {
@@ -14,8 +14,8 @@ export default function App() {
   return (
     <div className="App">
       <StateProvider>
-        {!auth && <UserLogin />}
-        {auth && <UserInfo />}
+        {!auth && <Login />}
+        {auth && <Info />}
       </StateProvider>
     </div>
   );

@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { authContext } from 'providers/AuthProvider';
 import Counter from 'Counter';
 
-export default function UserInfo() {
+export default function Info() {
   const { user, logout } = useContext(authContext);
 
   const onLogout = function (event) {

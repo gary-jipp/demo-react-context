@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import { authContext } from 'providers/AuthProvider';
 import Counter from 'Counter';
 
-export default function UserLogin() {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login } = useContext(authContext);
