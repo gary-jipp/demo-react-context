@@ -24,7 +24,7 @@ export default function Login(props) {
       <form onSubmit={onSubmit}>
         <p>
           <input type="text" name="username"
-             value={email} placeholder="Enter Username or email"
+            value={email} placeholder="Enter Username or email"
             onChange={onEmailChange} />
         </p>
         <p>
