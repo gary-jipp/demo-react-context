@@ -1,5 +1,7 @@
 import { createContext, useState } from 'react';
 
+export const stateContext = createContext();
+
 export default function StateProvider(props) {
 
   // Here is our Shared State Object
@@ -10,13 +12,13 @@ export default function StateProvider(props) {
   });
 
   // Functions to change  the counter state item
-  const increment = function () {
+  const increment = function() {
     setState({ ...state, counter: state.counter + 1 });
   };
-  const decrement = function () {
+  const decrement = function() {
     setState({ ...state, counter: state.counter - 1 });
   };
-  const clear = function () {
+  const clear = function() {
     setState({ ...state, counter: 0 });
   };
 
@@ -31,5 +33,3 @@ export default function StateProvider(props) {
     </stateContext.Provider>
   );
 };
-
-export const stateContext = createContext();
