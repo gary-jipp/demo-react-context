@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import StateProvider from 'providers/StateProvider';
 import Info from 'pages/Info';
