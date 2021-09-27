@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h2>My App</h2>
+      <h1>My App</h1>
       {!auth && <Login login={login} />}
       {auth && <Info logout={logout} user={user} />}
     </div>
