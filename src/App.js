@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import CounterProvider from 'providers/CounterProvider';
 import Info from 'pages/Info';
