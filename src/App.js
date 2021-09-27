@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import StateProvider from 'providers/StateProvider';
 import Info from 'pages/Info';
 import Login from 'pages/Login';
 import 'App.css';
@@ -21,10 +20,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <StateProvider>
-        {!auth && <Login login={login} />}
-        {auth && <Info logout={logout} user={user} />}
-      </StateProvider>
+      {!auth && <Login login={login} />}
+      {auth && <Info logout={logout} user={user} />}
     </div>
   );
 }

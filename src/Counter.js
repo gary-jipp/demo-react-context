@@ -1,8 +1,19 @@
-import { useContext } from 'react';
-import { stateContext } from 'providers/StateProvider';
+import { useState } from "react";
 
 export default function Counter() {
-  const { counter, increment, decrement, clear } = useContext(stateContext);
+  const [counter, setCounter] = useState(0);
+
+  // Functions to change  the counter state item
+  const increment = function() {
+    setCounter(counter + 1);
+  };
+  const decrement = function() {
+    setCounter(counter - 1);
+  };
+
+  const clear = function() {
+    setCounter(0);
+  };
 
   return (
     <div>
