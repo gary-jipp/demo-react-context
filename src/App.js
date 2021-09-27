@@ -9,10 +9,10 @@ export default function App() {
   const [auth, setAuth] = useState(false);
   const [user, setUser] = useState(null);
 
-  // Perform login process for the user & save authID, etc
+  // Perform some login process for the user
   const login = function(email, password) {
     setAuth(true);
-    setUser({ email, name: "Test user" });
+    setUser({ email, name: "Test user", id: "1234-5678-90ab" });
   };
 
   const logout = function() {

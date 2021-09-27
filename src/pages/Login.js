@@ -4,7 +4,6 @@ import Counter from 'Counter';
 export default function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login } = props.login;
 
   const onEmailChange = function(event) {
     setEmail(event.target.value);
@@ -17,7 +16,7 @@ export default function Login(props) {
   const onSubmit = function(event) {
     event.preventDefault();
     if (email)
-      login(email, password);
+      props.login(email, password);
   };
 
   return (
