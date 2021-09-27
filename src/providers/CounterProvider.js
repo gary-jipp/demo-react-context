@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react';
 
 // Create a Context
-export const stateContext = createContext();
+export const counterContext = createContext();
 
 // Create a Component wrapper from Context.Provider
 export default function CounterProvider(props) {
@@ -26,9 +26,9 @@ export default function CounterProvider(props) {
   // We can now use this as a component to wrap anything 
   // that needs our state
   return (
-    <stateContext.Provider value={providerData}>
+    <counterContext.Provider value={providerData}>
       {props.children}
-    </stateContext.Provider>
+    </counterContext.Provider>
   );
 };
 
