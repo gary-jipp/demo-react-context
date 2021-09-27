@@ -1,21 +1,20 @@
-import { useState, useContext } from 'react';
-import { authContext } from 'providers/AuthProvider';
+import { useState } from 'react';
 import Counter from 'Counter';
 
-export default function Login() {
+export default function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login } = useContext(authContext);
+  const { login } = props.login;
 
-  const onEmailChange = function (event) {
+  const onEmailChange = function(event) {
     setEmail(event.target.value);
   };
 
-  const onPasswordChange = function (event) {
+  const onPasswordChange = function(event) {
     setPassword(event.target.value);
   };
 
-  const onSubmit = function (event) {
+  const onSubmit = function(event) {
     event.preventDefault();
     if (email)
       login(email, password);

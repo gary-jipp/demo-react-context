@@ -1,13 +1,8 @@
-import { useContext } from 'react';
-import { authContext } from 'providers/AuthProvider';
 import Counter from 'Counter';
 
-export default function Info() {
-  const { user, logout } = useContext(authContext);
-
-  const onLogout = function (event) {
-    logout();
-  };
+export default function Info(props) {
+  const logout = props.logout;
+  const user = props.user;
 
   // Show user Info
   return (
@@ -19,7 +14,7 @@ export default function Info() {
 
       <Counter />
 
-      <input type="button" value="Logout" onClick={onLogout} />
+      <input type="button" value="Logout" onClick={logout} />
     </div>
   );
 };
