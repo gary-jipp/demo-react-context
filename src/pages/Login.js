@@ -33,7 +33,7 @@ export default function Login(props) {
             onChange={onPasswordChange} />
         </p>
         <p className="submit">
-          <input type="submit" name="commit" value="Login" />
+          <button type="submit" name="commit">Login</button>
         </p>
       </form>
 
