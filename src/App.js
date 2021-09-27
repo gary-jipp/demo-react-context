@@ -21,6 +21,7 @@ export default function App() {
 
   return (
     <div className="App">
+     <h1>My App</h1>
       <StateProvider>
         {!auth && <Login login={login} />}
         {auth && <Info logout={logout} user={user} />}
