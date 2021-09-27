@@ -14,7 +14,7 @@ export default function Info(props) {
 
       <Counter />
 
-      <input type="button" value="Logout" onClick={logout} />
-    </div>
+      <button type="button" onClick={logout}>Logout</button>
+    </div >
   );
 };
