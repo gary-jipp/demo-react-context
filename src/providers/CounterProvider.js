@@ -1,8 +1,10 @@
 import { createContext, useState } from 'react';
 
+// Create a Context
 export const stateContext = createContext();
 
-export default function StateProvider(props) {
+// Create a Component wrapper from Context.Provider
+export default function CounterProvider(props) {
 
   // Here is our Shared State Object
   const [counter, setCounter] = useState(0);

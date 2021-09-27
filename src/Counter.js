@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { stateContext } from 'providers/StateProvider';
+import { stateContext } from 'providers/CounterProvider';
 import 'App.css';
 
 export default function Counter() {

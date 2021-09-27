@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import StateProvider from 'providers/StateProvider';
+import CounterProvider from 'providers/CounterProvider';
 import Info from 'pages/Info';
 import Login from 'pages/Login';
 import 'App.css';
@@ -22,10 +22,10 @@ export default function App() {
   return (
     <div className="App">
      <h1>My App</h1>
-      <StateProvider>
+      <CounterProvider>
         {!auth && <Login login={login} />}
         {auth && <Info logout={logout} user={user} />}
-      </StateProvider>
+      </CounterProvider>
     </div>
   );
 }
