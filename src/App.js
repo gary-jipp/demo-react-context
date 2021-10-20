@@ -2,20 +2,12 @@ import { useState } from 'react';
 import Info from 'pages/Info';
 import Login from 'pages/Login';
 import 'App.css';
+import useAuth from 'hooks/useAuth';
 
 export default function App() {
-  const [auth, setAuth] = useState(false);
-  const [user, setUser] = useState(null);
 
-  // Perform some login process for the user
-  const login = function(email, password) {
-    setAuth(true);
-    setUser({ email, name: "Test user", id: "1234-5678-90ab" });
-  };
+  const {auth, user, login, logout} = useAuth();
 
-  const logout = function() {
-    setAuth(false);
-  };
 
   return (
     <div className="App">
