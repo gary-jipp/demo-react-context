@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { authContext } from 'providers/AuthProvider';
+import { useContext } from 'react/cjs/react.development';
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const { login } = useContext(authContext);
 
   const onEmailChange = function(event) {
