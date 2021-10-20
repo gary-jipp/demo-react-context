@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 const useAuth = function() {
-
   const [auth, setAuth] = useState(false);
   const [user, setUser] = useState(null);
 
