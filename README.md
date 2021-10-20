@@ -9,14 +9,14 @@
 - authContext exposes auth functions and state
 
 ```
-// auth=false
+--- auth=false
 <AuthProvider>
   <App>
     <Login/>
   </App>
 </AuthProvider>
 
-// auth=true
+--- auth=true
 <AuthProvider>
   <App>
     <Info/>
