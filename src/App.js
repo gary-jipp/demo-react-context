@@ -15,6 +15,7 @@ export default function App() {
 
   const logout = function() {
     setAuth(false);
+    setUser(null);
   };
 
   return (
