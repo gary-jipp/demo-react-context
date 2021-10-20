@@ -10,17 +10,13 @@
 
 ```
 // auth=false
-<AuthProvider>
   <App>
     <Login/>
   </App>
-</AuthProvider>
 
 // auth=true
-<AuthProvider>
   <App>
     <Info/>
   </App>
-</AuthProvider>
 
 ```
