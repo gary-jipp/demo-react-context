@@ -1,7 +1,8 @@
+import { useContext } from 'react';
+import { authContext } from 'providers/AuthProvider';
 
-export default function Info(props) {
-  const logout = props.logout;
-  const user = props.user;
+export default function Info() {
+  const { user, logout } = useContext(authContext);
 
   // Show user Info
   return (

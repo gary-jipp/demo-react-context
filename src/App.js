@@ -1,16 +1,17 @@
+import { useContext } from 'react';
 import Info from 'pages/Info';
 import Login from 'pages/Login';
+import { authContext } from 'providers/AuthProvider';
 import 'App.css';
-import useAuth from 'hooks/useAuth';
 
 export default function App() {
-  const { auth, user, login, logout } = useAuth();
+  const { auth } = useContext(authContext);
 
   return (
     <div className="App">
       <h1>My App</h1>
-      {!auth && <Login login={login} />}
-      {auth && <Info logout={logout} user={user} />}
+      {!auth && <Login />}
+      {auth && <Info />}
     </div>
   );
 }

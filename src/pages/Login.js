@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { authContext } from 'providers/AuthProvider';
 
-export default function Login(props) {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const { login } = useContext(authContext);
 
   const onEmailChange = function(event) {
     setEmail(event.target.value);
@@ -15,7 +18,7 @@ export default function Login(props) {
   const onSubmit = function(event) {
     event.preventDefault();
     if (email)
-      props.login(email, password);
+      login(email, password);
   };
 
   return (
