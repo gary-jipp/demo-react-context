@@ -7,7 +7,8 @@ const useAuth = function() {
   // Perform some login process for the user
   const login = function(email, password) {
     setAuth(true);
-    setUser({ email, name: "Test user", id: "1234-5678-90ab" });
+    const id = "1234-1234-1234";  // Some random userId
+    setUser({ email, id, name: "Test User" });
   };
 
   const logout = function() {
