@@ -7,14 +7,14 @@
 - sets `auth` state to logged in and shows User Info with logout button
 
 ```
-// auth=false
+--- auth=false
   <App>
     <Login/>
   </App>
 
-// auth=true
+--- auth=true
   <App>
     <Info/>
   </App>
-
+  
 ```
