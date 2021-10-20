@@ -13,6 +13,7 @@ const useAuth = function() {
 
   const logout = function() {
     setAuth(false);
+    setUser(null);
   };
 
   return { auth, user, login, logout };
