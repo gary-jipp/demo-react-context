@@ -1,5 +1,3 @@
-import Counter from 'Counter';
-
 export default function Info(props) {
   const logout = props.logout;
   const user = props.user;
