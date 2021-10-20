@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Counter from 'Counter';
 
 export default function Login(props) {
   const [email, setEmail] = useState("");
