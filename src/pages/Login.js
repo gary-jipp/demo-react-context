@@ -36,8 +36,6 @@ export default function Login(props) {
           <button type="submit" name="commit">Login</button>
         </p>
       </form>
-
-      <Counter />
     </div>
   );
 };
