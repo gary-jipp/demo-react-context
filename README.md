@@ -7,6 +7,20 @@
 - sets state to logged in and shows User Info with logout buttom
 - uses AuthProvider component to wrap <App> in index.js
 - authContext exposes auth functions and state
-- also uses a general-purpose StateProvider for all children of <App>
 
+```
+// auth=false
+<AuthProvider>
+  <App>
+    <Login/>
+  </App>
+</AuthProvider>
 
+// auth=true
+<AuthProvider>
+  <App>
+    <Info/>
+  </App>
+</AuthProvider>
+
+```
