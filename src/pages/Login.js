@@ -10,8 +10,7 @@ export default function Login() {
 
   const onSubmit = function(event) {
     event.preventDefault();
-    if (email)
-      login(email, password);
+    email && props.login(email, password);
   };
 
   return (
