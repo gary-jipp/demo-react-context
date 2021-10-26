@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Counter from 'Counter';
 
 export default function Login(props) {
   const [email, setEmail] = useState("");
@@ -28,6 +29,7 @@ export default function Login(props) {
         </p>
       </form>
 
+      <Counter />
     </div>
   );
 };
