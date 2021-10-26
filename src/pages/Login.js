@@ -24,18 +24,19 @@ export default function Login(props) {
         <p>
           <input type="text" name="username"
             value={email} placeholder="Enter Username or email"
-            onChange={onEmailChange} />
+            onChange={event => setEmail(event.target.value)} />
         </p>
         <p>
           <input type="password" name="password"
             value={password} placeholder="Password"
-            onChange={onPasswordChange} />
+            onChange={event => setPassword(event.target.value)} />
         </p>
         <p className="submit">
           <button type="submit" name="commit">Login</button>
         </p>
       </form>
 
+      <Counter />
     </div>
   );
 };
