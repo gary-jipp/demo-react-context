@@ -10,11 +10,13 @@
 --- auth=false
   <App>
     <Login/>
+      <Counter/>
   </App>
 
 --- auth=true
   <App>
     <Info/>
+      <Counter/>
   </App>
   
 ```
