@@ -28,7 +28,6 @@ export default function Login(props) {
         </p>
       </form>
 
-      <Counter />
     </div>
   );
 };
