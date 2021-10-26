@@ -1,19 +1,9 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import { counterContext } from 'providers/CounterProvider';
 import 'App.css';
 
 export default function Counter() {
-  const [counter, setCounter] = useState(0);
-
-  // Functions to change  the counter state item
-  const increment = function() {
-    setCounter(counter + 1);
-  };
-  const decrement = function() {
-    setCounter(counter - 1);
-  };
-  const clear = function() {
-    setCounter(0);
-  };
+  const { counter, increment, decrement, clear } = useContext(counterContext);
 
   return (
     <div>
