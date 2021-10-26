@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { authContext } from 'providers/AuthProvider';
-import { useContext } from 'react/cjs/react.development';
+import { useContext } from 'react';
 import Counter from 'Counter';
 
 export default function Login() {
@@ -10,7 +10,7 @@ export default function Login() {
 
   const onSubmit = function(event) {
     event.preventDefault();
-    email && props.login(email, password);
+    email && login(email, password);
   };
 
   return (
