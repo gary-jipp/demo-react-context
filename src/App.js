@@ -6,6 +6,7 @@ import 'App.css';
 export default function App() {
   const [auth, setAuth] = useState(false);
   const [user, setUser] = useState(null);
+  const [count, setCount] = useState(0);
 
   // Perform some login process for the user
   const login = function(email, password) {
@@ -22,8 +23,8 @@ export default function App() {
   return (
     <div className="App">
       <h1>My App</h1>
-      {!auth && <Login login={login} />}
-      {auth && <Info logout={logout} user={user} />}
+      {!auth && <Login login={login} count={count} setCount={setCount} />}
+      {auth && <Info logout={logout} user={user} count={count} setCount={setCount} />}
     </div>
   );
 }
