@@ -6,7 +6,8 @@
 - creates a dummy userId for the newly logged in user
 - sets `auth` state to logged in and shows User Info with logout button
 
-- uses AuthProvider component to wrap <App> in index.js
-- authContext exposes auth functions and state
+- uses `CounterProvider` component to wrap `<Info>` and `<Login`> in `Appjs`
+- uses `AuthProvider` component to wrap `<App>` in `index.js`
+
 
 ![Compopents](public/components.png)
