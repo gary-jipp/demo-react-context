@@ -9,19 +9,4 @@
 - uses AuthProvider component to wrap <App> in index.js
 - authContext exposes auth functions and state
 
-```
---- auth=false
-<AuthProvider>
-  <App>
-    <Login/>
-  </App>
-</AuthProvider>
-
---- auth=true
-<AuthProvider>
-  <App>
-    <Info/>
-  </App>
-</AuthProvider>
-
-```
+![Compopents](public/components.png)
