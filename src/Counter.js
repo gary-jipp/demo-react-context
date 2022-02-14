@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import 'App.css';
 
-export default function Counter(this.props.) {
+export default function Counter(props) {
 
   // Functions to change  the counter state item
   const increment = function() {
