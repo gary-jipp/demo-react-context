@@ -28,7 +28,13 @@ export default function Login(props) {
         </p>
       </form>
 
-      <Counter count={count} setCount={setCount}/>
+      <Counter
+        count={props.count}
+        increment={props.increment}
+        decrement={props.decrement}
+        clear={props.clear}
+      />
+
     </div>
   );
 };
