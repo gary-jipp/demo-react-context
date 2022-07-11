@@ -8,12 +8,3 @@
 
 - uses `CounterProvider` component to wrap `<Info>` and `<Login`> in `Appjs`
 - uses `AuthProvider` component to wrap `<App>` in `index.js`
-
-# Before Context Providers
-![Components Before](public/resources/before-providers.png)
-
-# After Counter Provider
-![Components After](public/resources/after-counter-provider.png)
-
-# After Auth Provider
-![Components After](public/resources/after-auth-provider.png)
