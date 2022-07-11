@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^17.0.38",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38"
   },
   "scripts": {
     "start": "react-scripts start",
