@@ -1,13 +1,15 @@
 import 'App.css';
+import useCounter from './hooks/useCounter';
 
-export default function Counter(props) {
+export default function Counter() {
+  const { counter, increment, decrement, clear } = useCounter();
 
   return (
     <div>
-      Counter: <span className="counter"> {props.count} </span>
-      <button onClick={props.increment}>+</button>
-      <button onClick={props.decrement}>-</button>
-      <button onClick={props.clear}>0</button>
+      Counter: <span className="counter"> {counter} </span>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={clear}>0</button>
     </div>
   );
 }
