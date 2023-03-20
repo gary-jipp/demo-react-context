@@ -1,5 +1,13 @@
 # React Context Demo
 
+# React Context Demo
+
+- Prop Drilling
+- React Hooks
+- Context API
+- Context Providers
+- Shared State
+
 - Simple Auth / Login App
 - Demonstrates Context Providers and useContext
 - accepts any username / email address & password
