@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import {createContext, useState} from 'react';
 
 // Create a Context
 export const counterContext = createContext();
@@ -21,9 +21,9 @@ export default function CounterProvider(props) {
   };
 
   // This list can get long with a lot of functions.  Reducer may be a better choice
-  const providerData = { counter, increment, decrement, clear };
+  const providerData = {counter, increment, decrement, clear};
 
-  // We can now use this as a component to wrap anything 
+  // We can now use this as a component to wrap anything
   // that needs our state
   return (
     <counterContext.Provider value={providerData}>

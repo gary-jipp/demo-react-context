@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { authContext } from 'providers/AuthProvider';
-import { useContext } from 'react';
+import {useState} from 'react';
+import {authContext} from 'providers/AuthProvider';
+import {useContext} from 'react';
 import Counter from 'Counter';
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login } = useContext(authContext);
+  const {login} = useContext(authContext);
 
   const onSubmit = function(event) {
     event.preventDefault();

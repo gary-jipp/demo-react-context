@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { counterContext } from 'providers/CounterProvider';
+import {useContext} from 'react';
+import {counterContext} from 'providers/CounterProvider';
 import 'App.css';
 
 export default function Counter() {
-  const { counter, increment, decrement, clear } = useContext(counterContext);
+  const {counter, increment, decrement, clear} = useContext(counterContext);
 
   return (
     <div>
