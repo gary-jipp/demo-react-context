@@ -1,7 +1,5 @@
 # React Context Demo
 
-# React Context Demo
-
 - Prop Drilling
 - React Hooks
 - Context API
