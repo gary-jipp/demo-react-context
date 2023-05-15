@@ -31,4 +31,3 @@ export default function CounterProvider(props) {
     </counterContext.Provider>
   );
 };
-
