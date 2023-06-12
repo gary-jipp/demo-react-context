@@ -14,3 +14,4 @@
 
 - uses `CounterProvider` component to wrap `<Info>` and `<Login`> in `Appjs`
 - uses `AuthProvider` component to wrap `<App>` in `index.js`
+
