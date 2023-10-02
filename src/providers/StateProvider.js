@@ -5,6 +5,8 @@ export const stateContext = createContext();
 export default function StateProvider(props) {
 
   // Here is our Shared State Object
+  // Should never really do this in a real app,
+  // but some people just can't help themselves
   const [state, setState] = useState({
     counter: 0,
     item1: 'more stuff 1',
@@ -25,7 +27,7 @@ export default function StateProvider(props) {
   // This list can get long with a lot of functions.  Reducer may be a better choice
   const providerData = { state, counter: state.counter, increment, decrement, clear };
 
-  // We can now use this as a component to wrap anything 
+  // We can now use this as a component to wrap anything
   // that needs our state
   return (
     <stateContext.Provider value={providerData}>
