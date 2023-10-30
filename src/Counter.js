@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import 'App.css';
 
 export default function Counter() {
@@ -16,7 +16,7 @@ export default function Counter() {
   };
 
   return (
-    <div>
+    <div class="counter">
       Counter: <span className="counter"> {counter} </span>
       <button onClick={increment}>+</button>
       <button onClick={decrement}>-</button>
