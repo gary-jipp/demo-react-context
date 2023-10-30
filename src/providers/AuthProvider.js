@@ -1,6 +1,10 @@
-import {createContext, useState} from 'react';
+import {createContext, useContext, useState} from 'react';
 
 export const authContext = createContext();
+
+export const useAuth = function() {
+  return useContext(authContext);
+};
 
 export default function AuthProvider(props) {
   const [auth, setAuth] = useState(false);
