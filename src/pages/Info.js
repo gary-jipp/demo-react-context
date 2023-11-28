@@ -1,8 +1,8 @@
-import {authContext, useAuth} from 'providers/AuthProvider';
+import {useAuth} from 'providers/AuthProvider';
 import Counter from 'Counter';
 
 export default function Info() {
-  const {user, logout} = useAuth(authContext);
+  const {user, logout} = useAuth();
 
   // Show user Info
   return (
