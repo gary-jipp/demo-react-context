@@ -1,11 +1,11 @@
 import {createContext, useContext, useState} from 'react';
 
 // Create a Context
-export const counterContext = createContext();
+const context = createContext();
 
 // Custom Hook to use Counter Context
 export const useCounter = function() {
-  return useContext(counterContext);
+  return useContext(context);
 };
 
 // Create a Component wrapper from Context.Provider
@@ -31,8 +31,8 @@ export default function CounterProvider(props) {
   // We can now use this as a component to wrap anything
   // that needs our state
   return (
-    <counterContext.Provider value={value}>
+    <context.Provider value={value}>
       {props.children}
-    </counterContext.Provider>
+    </context.Provider>
   );
 };

@@ -1,9 +1,9 @@
 import {createContext, useContext, useState} from 'react';
 
-export const authContext = createContext();
+const context = createContext();
 
 export const useAuth = function() {
-  return useContext(authContext);
+  return useContext(context);
 };
 
 export default function AuthProvider(props) {
@@ -27,8 +27,8 @@ export default function AuthProvider(props) {
 
   // We can use this component to wrap any content we want to share this context
   return (
-    <authContext.Provider value={value}>
+    <context.Provider value={value}>
       {props.children}
-    </authContext.Provider>
+    </context.Provider>
   );
 };
