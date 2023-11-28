@@ -26,12 +26,12 @@ export default function CounterProvider(props) {
   };
 
   // This list can get long with a lot of functions.  Reducer may be a better choice
-  const providerData = {counter, increment, decrement, clear};
+  const value = {counter, increment, decrement, clear};
 
   // We can now use this as a component to wrap anything
   // that needs our state
   return (
-    <counterContext.Provider value={providerData}>
+    <counterContext.Provider value={value}>
       {props.children}
     </counterContext.Provider>
   );
