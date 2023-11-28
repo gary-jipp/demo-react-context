@@ -10,7 +10,7 @@ export default function AuthProvider(props) {
   const [auth, setAuth] = useState(false);
   const [user, setUser] = useState(null);
 
-  // Perform login process for the user & save authID, etc
+  // Perform login for the user & save authID, etc
   const login = function(email, password) {
     setAuth(true);
     const id = "1234-1234-1234";  // Some random userId
