@@ -32,6 +32,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>My App</h1>
+
       {!user && <Login
         login={login}
         count={count}
@@ -49,6 +50,7 @@ export default function App() {
         decrement={decrement}
         clear={clear}
       />}
+
     </div>
   );
 }
