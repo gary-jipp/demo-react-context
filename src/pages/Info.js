@@ -7,6 +7,7 @@ export default function Info(props) {
   // Show user Info
   return (
     <div>
+      <Counter />
       <div className="UserInfo">
         <div>You are logged in</div>
         <div>Email: {user.email}</div>
@@ -17,7 +18,6 @@ export default function Info(props) {
         <button type="button" onClick={logout}>Logout</button>
       </div>
 
-      <Counter />
     </div>
   );
 };

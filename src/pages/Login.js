@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import Counter from 'Counter';
 
 export default function Login(props) {
@@ -12,6 +12,7 @@ export default function Login(props) {
 
   return (
     <div className="login">
+      <Counter />
       <form onSubmit={onSubmit}>
         <div>
           <input type="text" name="username"
@@ -28,7 +29,6 @@ export default function Login(props) {
         </div>
       </form>
 
-      <Counter />
     </div>
   );
 };
