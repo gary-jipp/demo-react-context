@@ -14,6 +14,7 @@ export default function Login() {
 
   return (
     <div className="login">
+      <Counter />
       <form onSubmit={onSubmit}>
         <div>
           <input type="text" name="username"
@@ -29,8 +30,6 @@ export default function Login() {
           <button type="submit" name="commit">Login</button>
         </div>
       </form>
-
-      <Counter />
     </div>
   );
 };
