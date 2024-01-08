@@ -5,14 +5,14 @@ import CounterProvider from 'providers/CounterProvider';
 import 'App.css';
 
 export default function App() {
-  const {auth} = useAuth();
+  const {user} = useAuth();
 
   return (
     <div className="App">
       <CounterProvider>
         <h1>My App</h1>
-        {!auth && <Login />}
-        {auth && <Info />}
+        {!user && <Login />}
+        {!!user && <Info />}
       </CounterProvider>
     </div>
   );
