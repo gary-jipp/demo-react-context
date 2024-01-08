@@ -7,6 +7,13 @@ export default function Info(props) {
   // Show user Info
   return (
     <div>
+      <Counter
+        count={props.count}
+        increment={props.increment}
+        decrement={props.decrement}
+        clear={props.clear}
+      />
+
       <p className="UserInfo">
         <div>You are logged in</div>
         <div>Email: {user.email}</div>
@@ -17,13 +24,7 @@ export default function Info(props) {
         <button type="button" onClick={logout}>Logout</button>
       </p>
 
-      <Counter
-        count={props.count}
-        increment={props.increment}
-        decrement={props.decrement}
-        clear={props.clear}
-      />
-      
+
     </div>
   );
 };
