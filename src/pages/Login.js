@@ -15,7 +15,7 @@ export default function Login(props) {
       <Counter />
       <form onSubmit={onSubmit}>
         <div>
-          <input type="text" name="username"
+          <input type="text" name="myemail"
             value={email} placeholder="Enter Username or email"
             onChange={event => setEmail(event.target.value)} />
         </div>
