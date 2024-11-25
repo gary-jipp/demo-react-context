@@ -16,8 +16,8 @@
 - uses `CounterProvider` component to wrap `<Info>` and `<Login`> in `Appjs`
 - uses `AuthProvider` component to wrap `<App>` in `index.js`
 
-- Do not  share "interface" functions: `setCounter(), setUser()`.
-- Only share "implementation" functions:  `increment(), clear(), login()`
+- Do not  share "implementation" functions: `setCounter(), setUser()`.
+- Only share "interface" functions:  `increment(), clear(), login()`
 - Can share state primitives, just don't share their `setState` functions
 - Its generally "OK" to share more complex state objects eg `user`
 - Sharing a function is better: `isloggedIn(), getUserName()`
