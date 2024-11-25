@@ -2,7 +2,7 @@ import {useState} from 'react';
 import Counter from 'Counter';
 
 export default function Login(props) {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("gary");
   const [password, setPassword] = useState("");
 
   const onSubmit = function(event) {
